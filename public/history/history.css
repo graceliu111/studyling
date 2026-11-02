@@ -14,7 +14,6 @@ body {
   margin: 0 auto;
   background: var(--container-bg);
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   padding: 25px;
   color: var(--text-color);
 }
@@ -123,4 +122,61 @@ hr{
 
 .tabs button.active {
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 16px 12px;
+  }
+
+  header h1 {
+    font-size: clamp(1.35rem, 7vw, 2rem);
+    line-height: 1.2;
+    padding: 0 4px 12px;
+  }
+
+  #back-button {
+    margin: 4px 0 16px;
+  }
+
+  .tabs-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabs {
+    display: flex;
+    width: max-content;
+    min-width: 100%;
+  }
+
+  .tabs button {
+    padding: 8px 14px;
+    white-space: nowrap;
+  }
+
+  #history-list li {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .task-text {
+    min-width: 60%;
+    overflow-wrap: anywhere;
+  }
+
+  .task-duration,
+  .completion-time {
+    margin-left: 0;
+    font-size: 0.85rem;
+  }
 }

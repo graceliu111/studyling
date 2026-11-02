@@ -218,3 +218,32 @@ input {
 .choose-button button:hover {
   transform: scale(1.07);
 }
+
+@media (max-width: 500px) {
+  body {
+    padding: 12px;
+  }
+
+  #timer-container {
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  .countdown-container,
+  .stopwatch-container {
+    padding: 14px 8px;
+  }
+
+  .time-display {
+    max-width: 100%;
+    font-size: clamp(1.7rem, 9vw, 2.5rem);
+    padding: 5px 10px;
+  }
+
+  .time-button button,
+  .time-button input,
+  .choose-button button {
+    padding: 8px;
+    margin: 3px;
+  }
+}

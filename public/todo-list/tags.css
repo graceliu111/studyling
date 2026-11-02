@@ -108,3 +108,27 @@ p {
 .delete-tag:hover{
   transform: scale(1.2);
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 8px 12px 20px;
+  }
+
+  .tag-entry {
+    margin-left: 0;
+    gap: 6px;
+  }
+
+  .tag-sample {
+    width: auto;
+    min-width: 72px;
+  }
+
+  #tags-container {
+    width: 100%;
+  }
+
+  #back-button {
+    margin: 8px 0;
+  }
+}

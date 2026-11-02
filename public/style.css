@@ -436,19 +436,113 @@ iframe {
 }
 
 @media (max-width: 500px) {
+  body {
+    align-items: stretch;
+    padding: 12px 0;
+  }
+
   .container {
-    margin: 10px;
+    width: calc(100% - 24px);
+    min-width: 0;
+    margin: 0 12px;
   }
 
   header {
-    padding: 20px 15px;
+    padding: 16px 12px;
+    margin-top: 0;
+    border-radius: 12px 12px 0 0;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: clamp(1.45rem, 7vw, 1.8rem);
   }
 
   .app-body {
-    padding: 20px 15px;
+    padding: 16px 12px;
+  }
+
+  #mail-btn {
+    position: static;
+    align-self: flex-end;
+    margin: 0 12px 8px;
+    font-size: 30px;
+  }
+
+  #clock-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  #clock-display,
+  #timer-display {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 1;
+  }
+
+  #clock-display {
+    width: min(320px, calc(100% - 24px));
+  }
+
+  .tag-input-container {
+    align-items: stretch;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  #tag-input,
+  .custom-dropdown {
+    flex: 1 1 0;
+    width: 0;
+    min-width: 0;
+    margin-left: 0;
+  }
+
+  .dropdown-button {
+    width: 100%;
+    min-width: 0;
+    padding: 5px 8px;
+  }
+
+  #exist-tag-button {
+    min-width: 0;
+  }
+
+  #exist-tag-dropdown {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .stats #clear-tasks {
+    order: 1;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .footer {
+    width: auto;
+    margin: 16px 12px 0;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  #ko-fi-container {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .delete-btn {
+    opacity: 1;
+    min-width: 28px;
+    min-height: 28px;
   }
 }

@@ -73,3 +73,47 @@
 .color-swatch:hover {
     transform: scale(1.07);
 }
+
+@media (max-width: 600px) {
+    .container {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 12px 18px 28px;
+    }
+
+    .about-content h1,
+    .about-content h4,
+    .about-content h5,
+    .color-swatches {
+        margin-left: 0;
+    }
+
+    .about-content h1 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        text-align: center;
+    }
+
+    .about-content h4 {
+        margin-top: 18px;
+        font-size: 1.05rem;
+        overflow-wrap: anywhere;
+    }
+
+    .about-content h5 {
+        margin-left: 8px;
+        font-size: 1rem;
+    }
+
+    .color-swatches {
+        gap: 8px;
+    }
+
+    .color-swatch {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    #back-button {
+        margin: 8px 0 16px;
+    }
+}
