@@ -59,24 +59,37 @@
  }
 
 @media (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     body {
-        padding: 12px;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: 12px 0;
     }
 
     body > h1 {
         font-size: clamp(1.5rem, 7vw, 2rem);
         text-align: center;
+        margin-bottom: 12px;
     }
 
     #back-button {
-        margin: 8px 0;
+        align-self: flex-start;
+        margin: 0 0 12px;
     }
 
     .mail-item {
+        box-sizing: border-box;
         width: min(500px, calc(100vw - 32px));
+        max-width: calc(100vw - 32px);
+        min-width: 0;
+        align-self: center;
         height: auto;
         min-height: 60vh;
-        margin: 8px 0;
+        margin: 0 auto 12px;
         padding: 12px;
     }
 
@@ -85,9 +98,13 @@
     }
 
     .mail-item textarea {
+        box-sizing: border-box;
+        display: block;
         width: 100%;
+        min-width: 0;
         height: 55vh;
         min-height: 300px;
+        padding: 8px 12px;
         font-size: 14px;
         overflow-wrap: anywhere;
     }
