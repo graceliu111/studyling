@@ -67,12 +67,16 @@ export function applyTheme(theme) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+function syncThemeFromStorage() {
     const currentTheme = localStorage.getItem('theme') || 'light';
     applyTheme(currentTheme);
     const currentBg = localStorage.getItem('background') || 'none';
     document.documentElement.setAttribute('data-background', currentBg);
-});
+}
+
+document.addEventListener('DOMContentLoaded', syncThemeFromStorage);
+
+window.addEventListener('pageshow', syncThemeFromStorage);
 
 window.addEventListener('storage', function (event) {
     if (event.key === 'theme') {
