@@ -73,6 +73,12 @@
 .color-swatch:hover {
     transform: scale(1.07);
 }
+a {
+  text-decoration: underline;
+  text-decoration-thickness: 1.3px; 
+  text-underline-offset: 1px;
+  color: darkgrey;
+}
 
 @media (max-width: 600px) {
     .container {
