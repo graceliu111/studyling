@@ -121,5 +121,7 @@ a {
 
     #back-button {
         margin: 8px 0 16px;
+        align-self: flex-start;
+        width: max-content;
     }
 }
