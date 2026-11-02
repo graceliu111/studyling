@@ -6,11 +6,10 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [
+    "rewrites": [
       {
         "source": "/",
-        "destination": "/todo-list.html",
-        "type": 302
+        "destination": "/todo-list.html"
       }
     ],
     "cleanUrls": true,
