@@ -6,6 +6,7 @@
   "icons": [
     {
       "src": "./Icons/logo.png",
+      "sizes": "500x500",
       "type": "image/png"
     }
   ]
