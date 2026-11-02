@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Madeonmactrackpad-Regular';
+  src: url('./Madeonmactrackpad-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Madeonmactrackpad2-Regular';
+  src: url('./Madeonmactrackpad2-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Madeonmactrackpadicons-Regular';
+  src: url('./Madeonmactrackpadicons-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
