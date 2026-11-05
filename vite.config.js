@@ -19,6 +19,7 @@ export default defineConfig({
         countdownTimer: resolve(__dirname, 'public/timers/countdown-timer.html'),
         stopwatchTimer: resolve(__dirname, 'public/timers/stopwatch-timer.html'),
         notFound: resolve(__dirname, 'public/404.html'),
+        termsAndConditions: resolve(__dirname, 'public/terms-and-conditions.html'),
       },
     },
   },
